@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.848f3ec1.css",
+    "main.js": "/portfolio/static/js/main.47a3bc76.js",
+    "static/js/488.9561f9b8.chunk.js": "/portfolio/static/js/488.9561f9b8.chunk.js",
+    "static/media/lensjudge.png": "/portfolio/static/media/lensjudge.321d39fa0ca28279a444.png",
+    "static/media/contact.png": "/portfolio/static/media/contact.d8a5aa31a7fb48a9bbb6.png",
+    "static/media/qualites.jpg": "/portfolio/static/media/qualites.3d36a1d5dce0b5dc3ccf.jpg",
+    "static/media/toutou.png": "/portfolio/static/media/toutou.d5b4dd5430b6b262fc7e.png",
+    "static/media/photo.jpg": "/portfolio/static/media/photo.6d0af5a70149989f0920.jpg",
+    "static/media/parcours.jpg": "/portfolio/static/media/parcours.2bfe66559767cee1d098.jpg",
+    "static/media/motivation.jpg": "/portfolio/static/media/motivation.c1ed71073d87c2973093.jpg",
+    "static/media/bomberman.png": "/portfolio/static/media/bomberman.ea785f8cad5396e2169b.png",
+    "index.html": "/portfolio/index.html",
+    "main.848f3ec1.css.map": "/portfolio/static/css/main.848f3ec1.css.map",
+    "main.47a3bc76.js.map": "/portfolio/static/js/main.47a3bc76.js.map",
+    "488.9561f9b8.chunk.js.map": "/portfolio/static/js/488.9561f9b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.848f3ec1.css",
+    "static/js/main.47a3bc76.js"
+  ]
+}
