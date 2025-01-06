@@ -21,7 +21,12 @@ function Contact() {
   };
 
   const handleScroll = (e) => {
-    if (e.deltaY < 0) {
+    if (e.deltaY > 0) {
+      scroller.scrollTo('home', {
+        duration: 500,
+        smooth: true,
+      });
+    } else if (e.deltaY < 0) {
       scroller.scrollTo('projects', {
         duration: 500,
         smooth: true,
@@ -32,11 +37,10 @@ function Contact() {
   return (
     <motion.section
       id="contact"
-      className="py-16 bg-gray-200 text-gray-800 text-center"
+      className="py-16 bg-gray-900 text-white text-center"
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      viewport={{ once: true }}
       onWheel={handleScroll}
     >
       <h2 className="text-4xl font-bold mb-6">Contactez-moi</h2>
@@ -45,42 +49,42 @@ function Contact() {
       </p>
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="hidden md:block">
-          <img src={contact} alt="Contact Illustration" className="w-400 h-400 object-contain" />
+          <img src={contact} alt="Contact Illustration" className="w-full h-auto object-contain" />
         </div>
-        <form ref={form} onSubmit={sendEmail} className="bg-white p-8 rounded-lg shadow-lg">
+        <form ref={form} onSubmit={sendEmail} className="bg-gray-800 p-8 rounded-lg shadow-lg w-full">
           <div className="mb-4">
-            <label htmlFor="name" className="block text-left text-gray-700 font-bold mb-2">Nom</label>
+            <label htmlFor="name" className="block text-left text-gray-300 font-bold mb-2">Nom</label>
             <input
               type="text"
               id="name"
               name="name"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 bg-gray-700 text-white"
               required
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-left text-gray-700 font-bold mb-2">Email</label>
+            <label htmlFor="email" className="block text-left text-gray-300 font-bold mb-2">Email</label>
             <input
               type="email"
               id="email"
               name="email"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 bg-gray-700 text-white"
               required
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className="block text-left text-gray-700 font-bold mb-2">Message</label>
+            <label htmlFor="message" className="block text-left text-gray-300 font-bold mb-2">Message</label>
             <textarea
               id="message"
               name="message"
               rows="5"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 bg-gray-700 text-white"
               required
             ></textarea>
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300"
+            className="w-full bg-gray-900 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-gray-800 transition duration-300"
           >
             Envoyer
           </button>

@@ -97,7 +97,7 @@ function Projects() {
             <p className="text-gray-700 mb-4">{project.description}</p>
             <Link
               to={project.link}
-              className="text-blue-500 hover:underline"
+              className="inline-block bg-gray-800 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300 mt-4"
             >
               En savoir plus
             </Link>

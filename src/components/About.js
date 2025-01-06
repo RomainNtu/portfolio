@@ -64,7 +64,7 @@ function About() {
         }, {
           img: parcours,
           title: 'Mon parcours',
-          text: 'Avec une formation en informatique industrielle et plusieurs expériences professionnelles, j\'ai acquis des compétences solides en JavaScript/TypeScript, Node.js, Laravel, et PostgreSQL.',
+          text: 'Avec une formation en informatique et plusieurs expériences professionnelles, j\'ai acquis des compétences solides en JavaScript/TypeScript, Laravel, et PostgreSQL.',
         }, {
           img: qualites,
           title: 'Mes qualités',

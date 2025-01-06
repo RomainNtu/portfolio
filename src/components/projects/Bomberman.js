@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import bomberman from '../../images/bomberman.png';
+import { useNavigate } from 'react-router-dom';
+import bomberman from '../../images/bomberman_banniere.png';
 
 function Bomberman() {
+  const navigate = useNavigate();
+
   return (
     <motion.section
       id="bomberman"
@@ -39,13 +41,27 @@ function Bomberman() {
             </ul>
           </div>
         </div>
+        <div className="bg-white p-6 rounded-lg shadow-lg mt-8">
+          <h3 className="text-2xl font-bold mb-4">Détails supplémentaires</h3>
+          <p className="text-left">
+            Ce projet a été réalisé dans le cadre d'un cours de qualité développement. Le jeu reprend les mécaniques classiques de Bomberman avec des améliorations et des fonctionnalités supplémentaires. Le code source est disponible sur GitHub.
+          </p>
+          <a
+            href="https://github.com/RomainNtu/bomberman"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gray-800 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300 mt-4"
+          >
+            Voir le dépôt GitHub
+          </a>
+        </div>
         <div className="mt-8">
-          <Link
-            to="/"
-            className="cursor-pointer text-blue-500 hover:underline"
+          <button
+            onClick={() => navigate(-1)}
+            className="inline-block text-gray-800 border border-gray-800 py-2 px-4 rounded-lg shadow-lg hover:bg-gray-800 hover:text-white transition duration-300"
           >
             Retour aux projets
-          </Link>
+          </button>
         </div>
       </div>
     </motion.section>
