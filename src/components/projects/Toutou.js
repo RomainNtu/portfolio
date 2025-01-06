@@ -45,7 +45,7 @@ function Toutou() {
             Toutou en vadrouille est un site web interactif permettant aux utilisateurs de partager leurs aventures avec leur chien. Les utilisateurs peuvent créer et partager des carnets de voyage, rechercher et filtrer les carnets existants, et laisser des commentaires et des évaluations. Le code source est disponible sur GitHub.
           </p>
           <a
-            href="https://github.com/RomainNtu/toutou"
+            href="https://github.com/RomainNtu/toutou_en_vadrouille"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gray-800 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300 mt-4"
